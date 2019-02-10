@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Guess A Number</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous"
+    />
+
+    <!-- the MAIN.CSS file is linked here -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body background="binary-image.jpg">
+    <div id="app" class="center">
+      <!-- Headers -->
+      <div id="headers">
+        <h1 id="title">Take Your Best Guess!</h1>
+        <h3 id="msg">Pick a number between 1 and 100.</h3>
+      </div>
+      <!-- Input -->
+      <div id="main-input" class="center">
+        <p><br>
+        <input class="player-input center" maxlength="3" /> &nbsp;
+        <button id="submit-btn" class='btn btn-info'>Play</button>
+        <p>
+      </div>
+      <!-- Guesses -->
+      <div id="guesses" class="center">
+        <p>
+          <ul id="guess-list">
+            <li class="guess"></li>
+            <li class="guess"></li>
+            <li class="guess"></li>
+            <li class="guess"></li>
+            <li class="guess"></li>
+          </ul>
+        </p>
+      </div>
+      <!-- Menu Buttons -->
+      <div id="menu-btns" class="center">
+        <p><br>
+          <button type="button" id="reset-btn" class='btn my-btn'>Play Again!</button>
+          <button type="button" id="hint-btn" class='btn my-btn'>Need a Hint?</button>
+        </p>
+      </div>
+    </div>
+    <script src='guessing-game.js'></script>
+    <!-- uncomment the script tag above when you are ready to add JavaScript to your document -->
+  </body>
+</html>
